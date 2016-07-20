@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="thinPlate">
+    <static>true</static>
+    <link name="link">
+        <pose>0.6 -0.2 1.12 0 0 0</pose>
+
+        <collision name="collision">
+            <geometry>
+                <box>
+                    <size>0.2 0.6 0.01</size>
+                </box>
+            </geometry>
+        </collision>
+
+        <visual name="visual">
+            <geometry>
+                  <box>
+                        <size>0.2 0.6 0.01</size>
+                  </box>
+            </geometry>
+
+            <material>
+                    <ambient> 1.0 1.0 0.0 0.6 </ambient>
+                    <diffuse> 1.0 1.0 0.0 0.6 </diffuse>
+            </material>
+
+            <transparency>0.5</transparency>
+
+        </visual>
+
+
+
+    </link>
+    <plugin name="yarp_model_move" filename="yarp_model_move/libyarp_model_move.so"/>
+
+  </model>
+</sdf>

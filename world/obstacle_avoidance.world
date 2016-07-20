@@ -1,0 +1,62 @@
+<!--
+  Copyright (C) 2007-2013 Istituto Italiano di Tecnologia ADVR, iCub Facility & RBCS
+  Authors: Mingo Enrico, Alessio Rocchi, Mirko Ferrati, Silvio Traversaro, Alessandro Settimi and Francesco Romano
+  CopyPolicy: Released under the terms of the LGPLv2.1 or later, see LGPL.TXT
+-->
+
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="default">
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- iCub -->
+    <include>
+        <uri>model://icub_fixed_self_collide</uri>
+    </include>
+
+    <!-- Right Hand Sphere -->
+    <include>
+      <uri>model://rightHandSphere</uri>
+    </include>
+
+    <!-- Right Hand Start Sphere -->
+    <include>
+      <uri>model://startSphere</uri>
+    </include>
+
+    <!-- Right Hand Target Sphere -->
+    <include>
+      <uri>model://rightHandTargetSphere</uri>
+    </include>
+
+    <!-- Right Hand Waypoint Sphere -->
+    <include>
+      <uri>model://rightHandWaypointSphere</uri>
+    </include>
+
+    <!-- Right Hand thin plate obstacle -->
+    <include>
+      <uri>model://thinPlate</uri>
+    </include>
+
+
+
+
+
+    <!-- <gui>
+        <camera>
+            <origin pose="-0.2 -0.8 1.4 0.0 0.35 1.0"/>
+        </camera>
+    </gui> -->
+
+  </world>
+</sdf>

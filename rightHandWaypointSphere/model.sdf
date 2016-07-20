@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="rightHandWaypointSphere">
+    <static>true</static>
+    <link name="link">
+
+      <visual name="visual">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <geometry>
+          <sphere>
+              <radius>0.02</radius>
+          </sphere>
+        </geometry>
+
+        <material>
+            <ambient> 0.0 0.0 1.0 0.6 </ambient>
+            <diffuse> 0.0 0.0 1.0 0.6 </diffuse>
+        </material>
+
+        <transparency>0.4</transparency>
+
+      </visual>
+
+    </link>
+    <plugin name="yarp_model_move" filename="yarp_model_move/libyarp_model_move.so"/>
+
+  </model>
+</sdf>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+        <uri>model://icub_feet_fixed_self_collide_weight</uri>
+    </include>
+
+
+    <!-- Right Hand Sphere -->
+    <include>
+      <uri>model://rightHandSphere</uri>
+    </include>
+
+    <!-- Right Hand Start Sphere -->
+    <include>
+      <uri>model://startSphere</uri>
+    </include>
+
+    <!-- Right Hand Target Sphere -->
+    <include>
+      <uri>model://rightHandTargetSphere</uri>
+    </include>
+
+    <!-- Right Hand Waypoint Sphere -->
+    <include>
+      <uri>model://rightHandWaypointSphere</uri>
+    </include>
+
+    <!-- iCub height table -->
+    <include>
+      <uri>model://iCubTable</uri>
+    </include>
+
+  </world>
+</sdf>
